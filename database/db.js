@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("Users", userSchema);
 
-const testUser = new User({
+const testUser = new Users({
   name: "User",
   password: "test",
   email: "test@test.com",
