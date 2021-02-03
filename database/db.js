@@ -8,7 +8,7 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
   // we're connected!
-  console.log("Connected to the database, player!");
+  console.log("Connected to the database");
 });
 
 const commentSchema = new mongoose.Schema({
@@ -33,5 +33,5 @@ module.exports = Comments;
 // LOAD DB BELOW
 // testComments.save(function (err) {
 //   if (err) return console.error(err);
-//   console.log("DB saved player");
+//   console.log("DB saved");
 // });
