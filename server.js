@@ -2,9 +2,9 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const port = 3000;
-const Comments = require("./database/db.js");
+const Users = require("./database/db.js");
 
-Comments.find({}, (error, results) => {
+Users.find({}, (error, results) => {
   if (error) {
     throw error;
   } else {
